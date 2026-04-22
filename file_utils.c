@@ -11,6 +11,7 @@ void usermenu(char *username, char *key)
     int opt = 1;
     while (opt >0 && opt< 6)
     {
+        opt=0;
         printf("1.add\n");
         printf("2.view\n");
         printf("3.search\n");
