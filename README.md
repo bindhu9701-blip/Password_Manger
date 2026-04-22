@@ -13,8 +13,12 @@ A command-line password manager written in C that allows users to securely store
 - Restore data if corruption is detected
 
 ---
-
-## Build & Run
+### 🔧 System Requirements
+- GCC compiler (C11 or later recommended)  
+- OpenSSL library (`-lssl -lcrypto`)  
+- Linux / Unix-based system
+- ---
+### Build & Run
 
 Make sure OpenSSL is installed.
 
@@ -29,3 +33,9 @@ or manually
 gcc *.c -o password_manager -lssl -lcrypto
 ./password_manager
 ```
+
+### Input Limits & Restrictions
+Username length: max ~100 characters
+Website name length: max ~100 characters
+Password length: max ~100 characters
+Master key length: max ~100 characters
