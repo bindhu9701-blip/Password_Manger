@@ -112,6 +112,7 @@ int GenerateCheckSum(char *filename)
         fclose(fptr);
         return -1;
     }
+    return -1;
 }
 void CreateFolder()
 {
@@ -123,7 +124,6 @@ void CreateFolder()
 }
 int VerifyCheckSum(char *username)
 {
-    int c;
     char *file = malloc(MAX);
     char *backup = malloc(MAX);
     GetUserFile(username, file);
