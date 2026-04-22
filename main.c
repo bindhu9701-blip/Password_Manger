@@ -13,7 +13,7 @@ int main()
     while (1)
     {
         printf("\n=====PASSWORD MANAGER=====\n");
-        printf("1. SignUp \n2. Login\n3. Logout\n4. Exit\n");
+        printf("1. SignUp \n2. Login\n3. Delete Account\n4. Exit\n");
         printf("ENTER CHOICE : ");
         scanf("%d", &choice);
         switch (choice)
@@ -30,7 +30,7 @@ int main()
             if (login(Username))
             {
                 printf("----Welcome %s---\n", Username);
-                printf("Enter your mastekey O_O : ");
+                printf("Enter your masterkey O_O : ");
                 scanf("%s", key);
                 // Checking for Data is saftey
                 if (!VerifyCheckSum(Username))
