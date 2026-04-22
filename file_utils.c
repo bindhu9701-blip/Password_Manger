@@ -8,8 +8,8 @@
 void usermenu(char *username, char *key)
 {
 
-    int opt = 0;
-    while (opt != 6)
+    int opt = 1;
+    while (opt >0 && opt< 6)
     {
         printf("1.add\n");
         printf("2.view\n");
