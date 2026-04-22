@@ -4,9 +4,9 @@
 #define MAX 256
 typedef struct Credential
 {
-    char site[100];
-    char id[100];
-    char pwd[100];
+    char site[MAX];
+    char id[MAX];
+    char pwd[MAX];
 } Credential;
 // user Sigin
 int signup();
