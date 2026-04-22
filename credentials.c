@@ -88,7 +88,7 @@ void viewCredential(char *username, char *key)
         data[len] = '\0';
         EncryptDecrypt((unsigned char *)data, len, (unsigned char *)key, strlen(key));
         printf("\n+---------------+\n");
-        printf("\nWebsite: %s\n Username: %s\n Password: %s\n", site, id, data);
+        printf("\nWebsite: %s\nUsername: %s\nPassword: %s\n", site, id, data);
         printf("\n+---------------+\n");
     }
     free(file);
